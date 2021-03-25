@@ -1,0 +1,23 @@
+﻿  IPEndpoint.cpp
+  Network.cpp
+  Socket.cpp
+IPEndpoint.obj : error LNK2019: unresolved external symbol __imp_htons referenced in function "public: struct sockaddr_in __cdecl PNet::IPEndpoint::GetSockaddrIPv4(void)" (?GetSockaddrIPv4@IPEndpoint@PNet@@QEAA?AUsockaddr_in@@XZ)
+IPEndpoint.obj : error LNK2019: unresolved external symbol __imp_ntohs referenced in function "public: __cdecl PNet::IPEndpoint::IPEndpoint(struct sockaddr *)" (??0IPEndpoint@PNet@@QEAA@PEAUsockaddr@@@Z)
+IPEndpoint.obj : error LNK2019: unresolved external symbol __imp_getaddrinfo referenced in function "public: __cdecl PNet::IPEndpoint::IPEndpoint(char const *,unsigned short)" (??0IPEndpoint@PNet@@QEAA@PEBDG@Z)
+IPEndpoint.obj : error LNK2019: unresolved external symbol __imp_freeaddrinfo referenced in function "public: __cdecl PNet::IPEndpoint::IPEndpoint(char const *,unsigned short)" (??0IPEndpoint@PNet@@QEAA@PEBDG@Z)
+IPEndpoint.obj : error LNK2019: unresolved external symbol __imp_inet_pton referenced in function "public: __cdecl PNet::IPEndpoint::IPEndpoint(char const *,unsigned short)" (??0IPEndpoint@PNet@@QEAA@PEBDG@Z)
+IPEndpoint.obj : error LNK2019: unresolved external symbol inet_ntop referenced in function "public: __cdecl PNet::IPEndpoint::IPEndpoint(struct sockaddr *)" (??0IPEndpoint@PNet@@QEAA@PEAUsockaddr@@@Z)
+Network.obj : error LNK2019: unresolved external symbol __imp_WSAStartup referenced in function "public: static bool __cdecl PNet::Network::Initialize(void)" (?Initialize@Network@PNet@@SA_NXZ)
+Network.obj : error LNK2019: unresolved external symbol __imp_WSACleanup referenced in function "public: static void __cdecl PNet::Network::Shutdown(void)" (?Shutdown@Network@PNet@@SAXXZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_accept referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Accept(class PNet::Socket &)" (?Accept@Socket@PNet@@QEAA?AW4PResult@2@AEAV12@@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_bind referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Bind(class PNet::IPEndpoint)" (?Bind@Socket@PNet@@QEAA?AW4PResult@2@VIPEndpoint@2@@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_closesocket referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Close(void)" (?Close@Socket@PNet@@QEAA?AW4PResult@2@XZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_connect referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Connect(class PNet::IPEndpoint)" (?Connect@Socket@PNet@@QEAA?AW4PResult@2@VIPEndpoint@2@@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_listen referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Listen(class PNet::IPEndpoint,int)" (?Listen@Socket@PNet@@QEAA?AW4PResult@2@VIPEndpoint@2@H@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_recv referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Recv(void *,int,int &)" (?Recv@Socket@PNet@@QEAA?AW4PResult@2@PEAXHAEAH@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_send referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Send(void *,int,int &)" (?Send@Socket@PNet@@QEAA?AW4PResult@2@PEAXHAEAH@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_setsockopt referenced in function "private: enum PNet::PResult __cdecl PNet::Socket::SetSocketOption(enum PNet::SocketOption,int)" (?SetSocketOption@Socket@PNet@@AEAA?AW4PResult@2@W4SocketOption@2@H@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_socket referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Create(void)" (?Create@Socket@PNet@@QEAA?AW4PResult@2@XZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_WSAGetLastError referenced in function "public: enum PNet::PResult __cdecl PNet::Socket::Accept(class PNet::Socket &)" (?Accept@Socket@PNet@@QEAA?AW4PResult@2@AEAV12@@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\ambis\source\repos\PNet\x64\Debug\PNet.exe : fatal error LNK1120: 19 unresolved externals
