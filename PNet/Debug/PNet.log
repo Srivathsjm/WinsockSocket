@@ -2,4 +2,5 @@
   Network.cpp
   Packet.cpp
   Socket.cpp
+C:\Users\ambis\source\repos\PNet\PNet\Socket.cpp(192,64): warning C4267: 'argument': conversion from 'size_t' to 'u_short', possible loss of data
   PNet.vcxproj -> C:\Users\ambis\source\repos\PNet\Debug\PNet.lib

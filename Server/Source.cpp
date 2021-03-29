@@ -67,7 +67,7 @@ int main() {
 
 					uint32_t a = 0, b = 0, c = 0;
 					std::string x = "";
-
+					//std::string y = "";		//Attempting to receive more than sent
 					Packet packet;
 					while (true)
 					{
@@ -99,12 +99,22 @@ int main() {
 							break;
 						}
 
-						packet >> a >> b >> c;  // Extract the integer from the packet to a,b and c
-						packet >> x;			// Extract the string from the packet to x
+						try
+						{
+							packet >> a >> b >> c;  // Extract the integer from the packet to a,b and c
+							packet >> x;			// Extract the string from the packet to x
+							//packet >> y;
+						}
+						catch (PacketException & exception)
+						{
+							std::cout << exception.what() << std::endl;
+							break;
+						}
+						
 
 						std::cout << a << "," << b << "," << c << std::endl;
 						std::cout << x << std::endl;
-
+						//std::cout << y << std::endl;
 						//std::cout <<"["<< bufferSize <<"] - "<< buffer <<std::endl;
 
 					}
